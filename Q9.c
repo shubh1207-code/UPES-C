@@ -14,6 +14,7 @@ Simple Interest=1050, Compound Interest=1125.76
 
 */
 #include <stdio.h>
+#include <math.h>
 int main()
 {
     int p, r, t;
@@ -21,9 +22,8 @@ int main()
     scanf("%d", &p);
     printf("Enter the rate of interest: ");
     scanf("%d", &r);
-    printf("Enter the time period: ");
+    printf("Enter the time period(months): ");
     scanf("%d", &t);
-    int pow;
     float si = (p * r * t) / 100.0;
     float ci = p * (pow(1 + r / 100.0, t)) - p;
 
