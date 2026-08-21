@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    printf("You entered: %c\n", ch);
+    printf("Its ASCII value: %d\n", ch);
+
+    return 0;
+}
+/*Prompts the user to enter a character
+Reads the character from the user
+Prints the entered character and its ASCII value*/
