@@ -2,6 +2,16 @@
 #include <stdbool.h>
 int main()
 {
+    int n = 3;
+    printf("%d\n", n);
+    char c = 'A';
+    printf("%c\n", c);
+    float f = 3.14;
+    printf("%f\n", f);
+    long l = 1234567890;
+    printf("%ld\n", l);
+    double d = 3.141592653589793;
+    printf("%lf\n", d);
     int a;
     printf("Size of int = %zu bytes\n", sizeof(int));
     printf("Size of int_a= %zu bytes\n", sizeof(a));
@@ -18,13 +28,14 @@ int main()
     printf("Size of boolVar1 = %i bytes\n", sizeof(boolVar1));
     printf("Size of boolVar2 = %i bytes\n", sizeof(boolVar2));
     printf("Size of bool =%zu bytes\n", sizeof(_Bool));
-    int b = -5, c = -2;
+    return 0;
+}
+
+/*int b = -5, c = -2;
     printf("\n-5 %% -2=%i\n", b % c);
     int d = -5, e = 2;
     printf("\n-5 %% 2=%i\n", d % e);
     int l = 5, m = -2;
     printf("\n5 %% -2=%i\n", l % m);
     int p = 5, q = 2;
-    printf("\n5 %% 2=%i\n", p % q);
-    return 0;
-}
+    printf("\n5 %% 2=%i\n", p % q);*/

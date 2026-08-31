@@ -1,4 +1,3 @@
-// Illustrate the use of various arithmetic operators
 #include <stdio.h>
 int main()
 {
