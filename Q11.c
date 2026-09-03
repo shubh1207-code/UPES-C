@@ -13,6 +13,7 @@ Output 2:
 12 is even
 
 */
+
 #include <stdio.h>
 int main()
 {
