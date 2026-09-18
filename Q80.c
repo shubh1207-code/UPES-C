@@ -1,17 +1,18 @@
-// Q75: Add two matrices.
+// Q80: Multiply two matrices.
 
 /*
 Sample Test Cases:
 Input 1:
-2 2
-1 2
-3 4
-2 2
-5 6
+2 3
+1 2 3
+4 5 6
+3 2
 7 8
+9 10
+11 12
 Output 1:
-6 8
-10 12
+58 64
+139 154
 
 */
 #include <stdio.h>
@@ -58,20 +59,24 @@ int main()
         }
         printf("\n");
     }
-    int sum[m][n];
+    int multiply[m][n];
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < n; j++)
         {
-            sum[i][j] = matrix[i][j] + matrix2[i][j];
+            multiply[i][j] = 0;
+            for (int k = 0; k < n; k++)
+            {
+                multiply[i][j] += matrix[i][k] * matrix2[k][j];
+            }
         }
     }
-    printf("Sum of the two matrices:\n");
+    printf("Product of the matrices:\n");
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < n; j++)
         {
-            printf("%d ", sum[i][j]);
+            printf("%d ", multiply[i][j]);
         }
         printf("\n");
     }
